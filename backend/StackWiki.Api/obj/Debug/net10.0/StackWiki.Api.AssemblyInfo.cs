@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StackWiki.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+849efd514bb72ba18d7ff73b9827dee576115eff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58caf13e8404399cf36483391b845dbd84b54a1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("StackWiki.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StackWiki.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
