@@ -1,21 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
 using StackWiki.Api.Models;
-
+using StackWiki.Api.Interfaces;
 namespace StackWiki.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 public class NotesController : ControllerBase
 {
+    private readonly INoteService _noteService;
+
+    public NotesController(INoteService noteService)
+    {
+        _noteService = noteService;
+    }
+
     [HttpGet]
     public ActionResult<IEnumerable<Note>> Get()
     {
-        var notes = new List<Note>
-        {
-            new Note { Id = 1, Title = "First Note", Content = "This is the content of the first note." },
-            new Note { Id = 2, Title = "Second Note", Content = "This is the content of the second note." }
-        };
-
+        var notes = _noteService.GetAllNotes();
         return Ok(notes);
     }
 }
